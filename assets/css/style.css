@@ -42,6 +42,8 @@ body {
     width: 75px;
     height: 75px;
     font-size: 3rem;
+    cursor: pointer;
+    margin: 3px;
 }
 
 .btn--color {
@@ -54,10 +56,14 @@ body {
     background-color: darkgreen;
 }
 
+.instructions-box {
+    margin-top: 10px;
+}
+
 .instructions {
     font-size: 1.5rem;
     color: blue;
-    padding-top: 10px;
+    cursor: pointer;
 }
 
 .instructions:hover {
