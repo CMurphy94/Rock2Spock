@@ -31,25 +31,29 @@ window.onclick = function(event) {
  * Game set up
  */
 
+
 let userPick = {
 
 }
 
+function computerGeneratedAnswer() {
 
-let compPick = {
-  Math.random();
+  let compPick = Math.random();
+  
+  if (compPick < 0.2) {
+    compChoice = "Rock";
+  } else if (compPick < 0.4) {
+    compChoice = "Paper";
+  } else if (compPick < 0.6) {
+    compChoice = "Scissors";
+  } else if (compPick < 0.8) {
+    compChoice = "Lizard";
+  } else {
+    compChoice = "Spock";
+  }
+
 }
-if (compPick < 0.2) {
-  compChoice = "Rock";
-} else if (compPick < 0.4) {
-  compChoice = "Paper";
-} else if (compPick < 0.6) {
-  compChoice = "Scissors";
-} else if (compPick < 0.8) {
-  compChoice = "Lizard";
-} else {
-  compChoice = "Spock";
-}
+
 
 
 let gameRules = {
