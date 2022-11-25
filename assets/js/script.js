@@ -37,7 +37,18 @@ let userPick = {
 
 
 let compPick = {
-
+  Math.random();
+}
+if (compPick < 0.2) {
+  compChoice = "Rock";
+} else if (compPick < 0.4) {
+  compChoice = "Paper";
+} else if (compPick < 0.6) {
+  compChoice = "Scissors";
+} else if (compPick < 0.8) {
+  compChoice = "Lizard";
+} else {
+  compChoice = "Spock";
 }
 
 
@@ -67,5 +78,5 @@ function loseLife() {
 
 
 function newGame() {
-  
+
 }
