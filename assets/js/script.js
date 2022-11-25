@@ -26,3 +26,46 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+/**
+ * Game set up
+ */
+
+let userPick = {
+
+}
+
+
+let compPick = {
+
+}
+
+
+let gameRules = {
+
+}
+
+
+function runGame() {
+
+}
+
+
+function compareAnswers() {
+
+}
+
+
+function incrementScore() {
+
+}
+
+
+function loseLife() {
+
+}
+
+
+function newGame() {
+  
+}
