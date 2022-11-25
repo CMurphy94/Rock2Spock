@@ -5,10 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/11d7329453.js" crossorigin="anonymous"></script>
+    <title>Rock 2 Spock</title>
 </head>
 <body>
-    
+    <h1 class="heading">Rock 2 Spock</h1>
+
+    <div class="game-area">
+        <div class="pick-text">Pick one to play!</div>
+        <div class="controls-area">
+            <button data-type="rock">
+                <i class="fa-regular fa-hand-back-fist"></i>
+            </button>
+            <button data-type="paper">
+                <i class="fa-regular fa-hand"></i>
+            </button>
+            <button data-type="scissors">
+                <i class="fa-regular fa-hand-scissors"></i>
+            </button>
+            <button data-type="lizard">
+                <i class="fa-regular fa-hand-lizard"></i>
+            </button>
+            <button data-type="spock">
+                <i class="fa-regular fa-hand-spock"></i>
+            </button>
+        </div>
+        <div class="instructions">How to play ?</div>
+    </div>
+
+    <div class="score-area">
+        <p class="scores">Score: <span id="score">0</span></p>
+        <p class="scores">Lives Remaining: <span id="lives">5</span></p>
+    </div>
 
     <script src="assets/js/script.js"></script>
 </body>
