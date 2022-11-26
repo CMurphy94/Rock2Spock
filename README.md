@@ -9,23 +9,28 @@ This site is targeted towards both people who are simply fans of the show from w
 
 Rock 2 Spock has a number of different features available to the user to make it a fun an interactive game.
 - Heading: 
+
 ![heading](./assets/images/rock2spockheading.PNG)
   - The heading of the website was designed to be prominant on the page and although simple remain memorable and recognisable to the user. The heading and name of the website was designed to be catchy but also match the order in which the buttons for the game are displayed (Going from Rock to Spock).
 
 - Buttons: 
+
 ![buttons](./assets/images/rock2spockbuttons.PNG)
   - The buttons on the website were designed to be interactive and provide feedback to the user, so that the user feels they are pressing a button of importance and not simply clicking on the screen.
 
 - How To Play Button: 
+
 ![openbutton](./assets/images/rock2spockhow.PNG)
 ![instructions](./assets/images/rock2spockhow2.PNG)
   - When deciding I wanted to create a website to host this game. I first needed to learn the rules of this game myself! I knew then that when creating this website I would like to have somewhere that clearly and concisly explained the rules of the game to the user. This will serve both users who are completely unfamiliar with the game and also those that maybe just need a refresher. I decided against having an entire second page for these rules as the amount of information within the rules did not warrent a full page to itself. However, I also felt that the rules would be too large to place simply on the page itself or in the footer. I then began to think of different way I could have these rules appear on the screen when the user needed them, but also dissapear when not necessary.
 
 - Score counter:
+
 ![scorecounter](./assets/images/rock2spockscore.PNG)
   - I wanted to have a clear and visible score counter so that the user can keep track of how many times they've won before running out of lives. This is coded so that whenever a draw or loss occurs it stays static and upon a win will increment by one. Once the user runs out of lives they are also alerted to what score they got to before it is reset back to zero for a new game to begin.
 
 - Lives counter:
+
 ![livescounter](./assets/images/rock2spocklives.PNG)
   - Theres no point in having a score counter if theres no limit on how long you can keep playing for. This is why I implements a total amount of lives the user has to play with. This is set at five and will decrement everytime the user loses against the computer. Once this reaches zero the user is alerted they have ran out of lives, notified of their score that they achieved and enouraged to try again. A new game is then created resetting both the users score back to zero and their lives back to five.
 
