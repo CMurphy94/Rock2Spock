@@ -45,6 +45,10 @@ Once I had implemented this new code and tested it, I believed my code was worki
 
 When rereading my code a number of times it didn't look as legible as I would like it to be should I be reading somebody elses code so I knew I had to tidy some things up. The first thing I did was remove certain functions and variables that had become redundant due to troubleshooting I had done. I then moved variables I had created that were being called after functions in which they were being used above said functions. This simply makes it easier to read and locate everything. I then noticed some lines of code that I was repeating a number of times and remeber being told that if you find yourself rewriting the same code over again there's usually an easier way to do it. The code in question was where the user score and lives remaining were being set. This was being wrote out a number of times and then again when the lives had ran out. I was able to make this even more concise and neater by removing it and placing it into a singular function that could be called whenever needed instead of the two lines of code being rewrote every time.
 
+I also ran my website through lighthouse within dev tools. This returned a good score however the accesibility was lower than I would like being around 91. I used this feedback to make changes to the colors I had selected for my heading and put my website back through lighthouse which returned scores that I was happy with.
+
+![lighthousescores](./assets/images/lighthousetesting.PNG)
+
 ### Validator Testing
 
 - HTML
