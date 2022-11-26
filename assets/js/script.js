@@ -82,6 +82,9 @@ let [score, lives] = [0, 5];
 function updateScore(userScore, userLives) {
     document.getElementById('score').innerHTML = userScore;
     document.getElementById('lives').innerHTML = userLives;
+
+    score = userScore;
+    lives = userLives;
 }
 
 /**
@@ -92,7 +95,7 @@ function updateScore(userScore, userLives) {
  */
 function userPick(input) {
   const options = ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock'];
-  
+
   // Generates a random number between 0-4 to correlate with options array.
   const randomNum = Math.trunc(Math.random() * 5);
   const compChoice = options[randomNum];

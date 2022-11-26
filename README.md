@@ -50,6 +50,8 @@ I also ran my website through lighthouse within dev tools. This returned a good 
 
 ![lighthousescores](./assets/images/lighthousetesting.PNG)
 
+Before submitting my project I decided to just run it one more time to make sure everything was running smoothly. When I did this I played until I ran out of lives, once I ran of lives I kept receiving the alert that I had no lives remaining even though it was showing my lives as having reset to 5. Upon investigation I realised that the function I had created to update the score counter and lives counter was only updating the inner html of the score and lives but was not updating the variable of score and lives themselves. This cause the variable of lives to be stuck below zero and forced the reset alert to continue prompting and the game to break. I was able to resolve this by implementing two lines of code my function that updated the variables as well as the inner html
+
 ### Validator Testing
 
 - HTML
