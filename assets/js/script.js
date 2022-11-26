@@ -1,8 +1,8 @@
-/**
- * Instructios on how to play the game code from W3Schools, directly credited in ReadMe
+/*
+ * Instructions on how to play the game code from W3Schools, directly credited in ReadMe
  */
 // Get the modal
-/* var modal = document.getElementById("myModal");
+ var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
 var btn = document.getElementById("instBtn");
@@ -25,7 +25,7 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-} */
+}
 
 /**
  * Game set up
@@ -33,25 +33,32 @@ window.onclick = function(event) {
 
 
 function userPick(input) {
-  let options = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
+  let options = ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock'];
 
   let compPick = Math.random();
   
   if (compPick < 0.2) {
-    compChoice = "Rock";
+    compChoice = 'Rock';
   } else if (compPick < 0.4) {
-    compChoice = "Paper";
+    compChoice = 'Paper';
   } else if (compPick < 0.6) {
-    compChoice = "Scissors";
+    compChoice = 'Scissors';
   } else if (compPick < 0.8) {
-    compChoice = "Lizard";
+    compChoice = 'Lizard';
   } else {
-    compChoice = "Spock";
+    compChoice = 'Spock';
   }
 
   switch(compareAnswers[compPick][userPick]) {
-
-  }
+    case 'win':
+      alert(`You chose ${userPick}, the computer chose ${compPick}. Congratulations, you won!`);
+      break;
+    case 'lose':
+      alert(`You chose ${userPick}, the computer chose ${compPick}. Unfortunately you lose this round, why not try again?`);
+      break;
+    default:
+      alert(`You chose ${userPick}, the computer chose ${compPick}. It's a tie! Try again?`)
+    }
 
 }
 
@@ -63,40 +70,40 @@ function runGame() {
 
 const compareAnswers = {
   Rock: {
-    Rock: "draw",
-    Paper: "win",
-    Scissors: "lose",
-    Lizard: "lose",
-    Spock: "win"
+    Rock: 'draw',
+    Paper: 'win',
+    Scissors: 'lose',
+    Lizard: 'lose',
+    Spock: 'win'
   },
   Paper: {
-    Rock: "lose",
-    Paper: "draw",
-    Scissors: "win",
-    Lizard: "win",
-    Spock: "lose"
+    Rock: 'lose',
+    Paper: 'draw',
+    Scissors: 'win',
+    Lizard: 'win',
+    Spock: 'lose'
   },
   Scissors: {
-    Rock: "win",
-    Paper: "lose",
-    Scissors: "draw",
-    Lizard: "lose",
-    Spock: "win"
+    Rock: 'win',
+    Paper: 'lose',
+    Scissors: 'draw',
+    Lizard: 'lose',
+    Spock: 'win'
   },
   Lizard: {
-    Rock: "win",
-    Paper: "lose",
-    Scissors: "win",
-    Lizard: "draw",
-    Spock: "lose"
+    Rock: 'win',
+    Paper: 'lose',
+    Scissors: 'win',
+    Lizard: 'draw',
+    Spock: 'lose'
   },
   Spock: {
-    Rock: "lose",
-    Paper: "win",
-    Scissors: "lose",
-    Lizard: "win",
-    Spock: "draw"
-  },
+    Rock: 'lose',
+    Paper: 'win',
+    Scissors: 'lose',
+    Lizard: 'win',
+    Spock: 'draw'
+  }
 }
 
 
