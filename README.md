@@ -30,7 +30,12 @@ When rereading my code a number of times it didn't look as legible as I would li
 - CSS
  - Placeholder
 - JavaScript
- - Placeholder
+ - No errors were returned when passing through the [JShint validator](https://jshint.com/)
+  - The following metrics were returned:
+  - There are 6 functions in the file.
+  - Function with the largest signature takes 2 arguements, while the median is 0.5.
+  - The largest function has 8 statements in it, while the median is 2.
+  - The most complex function has cyclomatic complexity value of 4 while the median is 1.
 
 ## Deployment
 
