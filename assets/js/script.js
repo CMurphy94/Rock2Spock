@@ -2,7 +2,7 @@
  * Instructios on how to play the game code from W3Schools, directly credited in ReadMe
  */
 // Get the modal
-var modal = document.getElementById("myModal");
+/* var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
 var btn = document.getElementById("instBtn");
@@ -25,7 +25,7 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-}
+} */
 
 /**
  * Game set up
@@ -33,7 +33,26 @@ window.onclick = function(event) {
 
 
 let userPick = {
-
+  rock: {
+    scissors: "breaks",
+    lizard: "crushes"
+  },
+  paper: {
+    rock: "covers",
+    spock: "disproves"
+  },
+  scissors: {
+    paper: "cuts",
+    lizard: "decapitates"
+  },
+  lizard: {
+    spock: "poisons",
+    paper: "eats"
+  },
+    spock: {
+    scissors: "smashes",
+    rock: "vaporizes"
+  },
 }
 
 function computerGeneratedAnswer() {
@@ -54,15 +73,8 @@ function computerGeneratedAnswer() {
 
 }
 
-
-
-let gameRules = {
-
-}
-
-
 function runGame() {
-
+  
 }
 
 
