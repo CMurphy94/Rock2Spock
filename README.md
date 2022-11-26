@@ -3,7 +3,7 @@
 Rock 2 Spock is an online browser based "Rock, Paper, Scissors, Lizard, Spock" game based off of the hit show "The Big Bang Theory". This is designed to be a fun and simple game that anybody can play. With a total of five lives you play against the computer and see how high of a score you can garner before running out of lives. Once you run out of lives you will be alerted, informed of the high score you achieved and encouraged to try to beat your score.
 This site is targeted towards both people who are simply fans of the show from which the game is based and also those who are looking for a simple fun to play browser game to pass the time. For those that don't know the rules of the game and only know the basic "Rock, Paper, Scissors" game there is a button that will provide the user with the instructions of how to win.
 
-![responsiveness](.assets/images/websitesizes.PNG)
+![responsiveness](./assets/images/websitesizes.PNG)
 
 ## Features
 
