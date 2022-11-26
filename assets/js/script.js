@@ -68,20 +68,17 @@ window.onclick = function(event) {
   }
 }
 
+let [score, lives] = [0, 5];
+
 function updateScore(userScore, userLives) {
     document.getElementById('score').innerHTML = userScore;
     document.getElementById('lives').innerHTML = userLives;
 }
 
-let [score, lives] = [0, 5]
-
 function userPick(input) {
   const options = ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock'];
-
   const randomNum = Math.trunc(Math.random() * 5);
   const compChoice = options[randomNum];
-  console.log("i am here", compareAnswers[compChoice][input]);
-  
 
   switch(compareAnswers[compChoice][input]) {
     case 'win':
@@ -99,7 +96,6 @@ function userPick(input) {
 
     if(lives < 1) {
       alert(`Oh no! Looks like you've ran out of lives. Good job on getting a high score of ${score} though. Why not see if you can beat it!`);
-      //[score, lives] = [0, 5];
       updateScore(0, 5);
     }
 }  
