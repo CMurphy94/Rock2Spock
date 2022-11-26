@@ -81,17 +81,18 @@ function userPick(input) {
   switch(compareAnswers[compChoice][input]) {
     case 'win':
       alert(`You chose ${input}, the computer chose ${compChoice}. Congratulations, you won!`);
-      let scoreUp = document.getElementById("score");
-      scoreUp++;
+      score++;
       break;
     case 'lose':
       alert(`You chose ${input}, the computer chose ${compChoice}. Unfortunately you lose this round, why not try again?`);
-      let livesDown = document.getElementById("lives");
-      livesDown--;
+      lives--;
       break;
     default:
       alert(`You chose ${input}, the computer chose ${compChoice}. It's a tie! Try again?`)
     }
+
+    document.getElementById('score').innerHTML = score;
+    document.getElementById('lives').innerHTML = lives;
 
 }
 
