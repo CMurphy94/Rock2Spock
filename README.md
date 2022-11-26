@@ -20,3 +20,34 @@ After setting up my initial game I was not getting the returns or alerts I expec
 During this time I also decided to change how I had written my object in which it was displaying the different synonyms of how the user could win from 'crushes, cuts, vaporizes etc.. to simply win, lose or draw. The reason for this was to allow for the switch statement to also me a lot more concise instead of having up to 10 different cases. This allowed me to have a case for win, case for lose and a default show a draw be pulled. 
 
 Once I had implemented this new code and tested it, I believed my code was working exactly as I wanted to. I ran a test that returned a computer choice of "Rock" verses my own choice as user of "Rock" as well. This ran the default of the switch statement and returned a tie. When running a second test I realised something wasn't quite right as my alert returned "user picked lizard, computer picked scissors so it was a tie". As this was clearly incorrect I knew my code was as well. I ran the code a number of times more and no matter the user input or computer choice generated the result was also a tie. I knew that this meant my switch statement was not working correctly and it was not checking the parameters for my win or loss case and simply returning the default of the statement. I used dev tools to help troubleshoot this and I was shown an error on a certain line of my code that related to where I had compared answers. To try and troubleshoot this further I ran a simply console log of this statement which returned undefined. This helped me to realise one of both of the values was not being pulled correctly. I removed the user choice from this and ran it again and it was showing the correct result. This helped me to realise the issue was where I was pulling the userpick in my check. When console logging that directly it was not returning the array values and only returning undefined. It took me some time going through my code line by line to see where the problem was, but when I did spot it, it was glaringly obvious why my code would not run. as userPick was the name of the function I had created and not the values themselves. I simply changed this to the input defined in the function itself and re-ran my code to see it was now returning the correct result and using the switch statement as correctly intended.
+
+When rereading my code a number of times it didn't look as legible as I would like it to be should I be reading somebody elses code so I knew I had to tidy some things up. The first thing I did was remove certain functions and variables that had become redundant due to troubleshooting I had done. I then moved variables I had created that were being called after functions in which they were being used above said functions. This simply makes it easier to read and locate everything. I then noticed some lines of code that I was repeating a number of times and remeber being told that if you find yourself rewriting the same code over again there's usually an easier way to do it. The code in question was where the user score and lives remaining were being set. This was being wrote out a number of times and then again when the lives had ran out. I was able to make this even more concise and neater by removing it and placing it into a singular function that could be called whenever needed instead of the two lines of code being rewrote every time.
+
+### Validator Testing
+
+- HTML
+ - Placeholder
+- CSS
+ - Placeholder
+- JavaScript
+ - Placeholder
+
+## Deployment
+
+This website was deployed directly to GitHub. The steps to do this is as follow:
+- In the repository, select settings.
+- On the left side nav bar, select pages.
+- Under branch, select main and then hit save.
+- Allow some time for the website to deploy and the link for the website will appear at the top of pages.
+
+The live link for my website can be found here - https://cmurphy94.github.io/Rock2Spock/
+
+## Credits
+
+When designing how I wanted my webpage to look I garnered inspiration on how the user could select what they wanted to play from a similar browser game which was https://rockpaperscissorslizardspock.dev/ 
+I really liked how this website provide the different hand signs for the game which the user could click on to select what they wanted to play and knew I wanted to implement something similar.
+I was able to get these hand signs directly from Font Awesome and added titles to these buttons for visually impaired users.
+
+When wanting to implement a pop up window to display the instructions on how to play the game I wasn't exactly sure how I needed to code this and used W3Schools to learn how to do this which I was able to get implementable code from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal
+
+When adjusting my CSS for smaller screen sizes I did not want my heading to fall under itself. I was able to stop this from occuring by using white-space: no wrap and I was able to learn how this works and the code for it from StackOverflow directly from https://stackoverflow.com/questions/5232310/how-can-i-force-div-contents-to-stay-in-one-line-with-html-and-css
