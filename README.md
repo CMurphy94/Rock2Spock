@@ -26,16 +26,16 @@ When rereading my code a number of times it didn't look as legible as I would li
 ### Validator Testing
 
 - HTML
- - No errors or warnings were returned when passing through the [W3C Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcmurphy94.github.io%2FRock2Spock%2F)
+  - No errors or warnings were returned when passing through the [W3C Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcmurphy94.github.io%2FRock2Spock%2F)
 - CSS
- - No errors or warnings were returned when passing through the [(Jigsaw) Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcmurphy94.github.io%2FRock2Spock%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+  - No errors or warnings were returned when passing through the [(Jigsaw) Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcmurphy94.github.io%2FRock2Spock%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 - JavaScript
- - No errors were returned when passing through the [JShint Validator](https://jshint.com/)
-  - The following metrics were returned:
-  - There are 6 functions in the file.
-  - Function with the largest signature takes 2 arguements, while the median is 0.5.
-  - The largest function has 8 statements in it, while the median is 2.
-  - The most complex function has cyclomatic complexity value of 4 while the median is 1.
+  - No errors were returned when passing through the [JShint Validator](https://jshint.com/)
+    - The following metrics were returned:
+    - There are 6 functions in the file.
+    - Function with the largest signature takes 2 arguements, while the median is 0.5.
+    - The largest function has 8 statements in it, while the median is 2.
+    - The most complex function has cyclomatic complexity value of 4 while the median is 1.
 
 ## Deployment
 
