@@ -32,15 +32,8 @@ window.onclick = function(event) {
  */
 
 
-let userPick = {
-  rock: {scissors: "breaks", lizard: "crushes"},
-  paper: {rock: "covers", spock: "disproves"},
-  scissors: {paper: "cuts", lizard: "decapitates"},
-  lizard: {spock: "poisons", paper: "eats"},
-  spock: {scissors: "smashes", rock: "vaporizes"},
-}
-
-function computerGeneratedAnswer() {
+function userPick(input) {
+  let options = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
 
   let compPick = Math.random();
   
@@ -56,6 +49,10 @@ function computerGeneratedAnswer() {
     compChoice = "Spock";
   }
 
+  switch(compareAnswers[compPick][userPick]) {
+
+  }
+
 }
 
 function runGame() {
@@ -63,8 +60,43 @@ function runGame() {
 }
 
 
-function compareAnswers() {
 
+const compareAnswers = {
+  Rock: {
+    Rock: "draw",
+    Paper: "win",
+    Scissors: "lose",
+    Lizard: "lose",
+    Spock: "win"
+  },
+  Paper: {
+    Rock: "lose",
+    Paper: "draw",
+    Scissors: "win",
+    Lizard: "win",
+    Spock: "lose"
+  },
+  Scissors: {
+    Rock: "win",
+    Paper: "lose",
+    Scissors: "draw",
+    Lizard: "lose",
+    Spock: "win"
+  },
+  Lizard: {
+    Rock: "win",
+    Paper: "lose",
+    Scissors: "win",
+    Lizard: "draw",
+    Spock: "lose"
+  },
+  Spock: {
+    Rock: "lose",
+    Paper: "win",
+    Scissors: "lose",
+    Lizard: "win",
+    Spock: "draw"
+  },
 }
 
 
