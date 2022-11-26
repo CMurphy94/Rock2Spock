@@ -74,13 +74,26 @@ function openInstructions () {
 
 let [score, lives] = [0, 5];
 
+/**
+ * Updates the user score and user lives remaining.
+ * @param {integer} userScore The users score. 
+ * @param {integer} userLives The users lives.
+ */
 function updateScore(userScore, userLives) {
     document.getElementById('score').innerHTML = userScore;
     document.getElementById('lives').innerHTML = userLives;
 }
 
+/**
+ * Takes the users input and compares it with the
+ * computers answer to determine who wins/loses or draws
+ * 
+ * @param {String} input the users selection. 
+ */
 function userPick(input) {
   const options = ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock'];
+  
+  // Generates a random number between 0-4 to correlate with options array.
   const randomNum = Math.trunc(Math.random() * 5);
   const compChoice = options[randomNum];
 
