@@ -33,26 +33,11 @@ window.onclick = function(event) {
 
 
 let userPick = {
-  rock: {
-    scissors: "breaks",
-    lizard: "crushes"
-  },
-  paper: {
-    rock: "covers",
-    spock: "disproves"
-  },
-  scissors: {
-    paper: "cuts",
-    lizard: "decapitates"
-  },
-  lizard: {
-    spock: "poisons",
-    paper: "eats"
-  },
-    spock: {
-    scissors: "smashes",
-    rock: "vaporizes"
-  },
+  rock: {scissors: "breaks", lizard: "crushes"},
+  paper: {rock: "covers", spock: "disproves"},
+  scissors: {paper: "cuts", lizard: "decapitates"},
+  lizard: {spock: "poisons", paper: "eats"},
+  spock: {scissors: "smashes", rock: "vaporizes"},
 }
 
 function computerGeneratedAnswer() {
