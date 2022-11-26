@@ -96,16 +96,15 @@ function userPick(input) {
 
     if(lives < 1) {
       alert(`Oh no! Looks like you've ran out of lives. Good job on getting a high score of ${score} though. Why not see if you can beat it!`);
+      [score, lives] = [0, 5];
+      document.getElementById('score').innerHTML = score;
+      document.getElementById('lives').innerHTML = lives;
     }
 
-}
-
-function runGame() {
-  
-}
+}  
 
 function incrementScore() {
-
+  
 }
 
 
