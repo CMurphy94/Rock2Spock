@@ -68,6 +68,11 @@ window.onclick = function(event) {
   }
 }
 
+function updateScore(userScore, userLives) {
+    document.getElementById('score').innerHTML = userScore;
+    document.getElementById('lives').innerHTML = userLives;
+}
+
 let [score, lives] = [0, 5]
 
 function userPick(input) {
@@ -90,29 +95,11 @@ function userPick(input) {
     default:
       alert(`You chose ${input}, the computer chose ${compChoice}. It's a tie! Try again?`)
     }
-
-    document.getElementById('score').innerHTML = score;
-    document.getElementById('lives').innerHTML = lives;
+    updateScore(score, lives);
 
     if(lives < 1) {
       alert(`Oh no! Looks like you've ran out of lives. Good job on getting a high score of ${score} though. Why not see if you can beat it!`);
-      [score, lives] = [0, 5];
-      document.getElementById('score').innerHTML = score;
-      document.getElementById('lives').innerHTML = lives;
+      //[score, lives] = [0, 5];
+      updateScore(0, 5);
     }
-
 }  
-
-function incrementScore() {
-  
-}
-
-
-function loseLife() {
-
-}
-
-
-function newGame() {
-
-}
