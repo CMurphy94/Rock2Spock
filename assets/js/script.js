@@ -30,45 +30,7 @@ window.onclick = function(event) {
 /**
  * Game set up
  */
-
-
-function userPick(input) {
-  let options = ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock'];
-
-  let compPick = Math.random();
-  
-  if (compPick < 0.2) {
-    compChoice = 'Rock';
-  } else if (compPick < 0.4) {
-    compChoice = 'Paper';
-  } else if (compPick < 0.6) {
-    compChoice = 'Scissors';
-  } else if (compPick < 0.8) {
-    compChoice = 'Lizard';
-  } else {
-    compChoice = 'Spock';
-  }
-
-  switch(compareAnswers[compPick][userPick]) {
-    case 'win':
-      alert(`You chose ${userPick}, the computer chose ${compPick}. Congratulations, you won!`);
-      break;
-    case 'lose':
-      alert(`You chose ${userPick}, the computer chose ${compPick}. Unfortunately you lose this round, why not try again?`);
-      break;
-    default:
-      alert(`You chose ${userPick}, the computer chose ${compPick}. It's a tie! Try again?`)
-    }
-
-}
-
-function runGame() {
-  
-}
-
-
-
-const compareAnswers = {
+ const compareAnswers = {
   Rock: {
     Rock: 'draw',
     Paper: 'win',
@@ -106,6 +68,36 @@ const compareAnswers = {
   }
 }
 
+let [score, lives] = [0, 5]
+
+function userPick(input) {
+  const options = ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock'];
+
+  const randomNum = Math.trunc(Math.random() * 5);
+  const compChoice = options[randomNum];
+  console.log("i am here", compareAnswers[compChoice][input]);
+  
+
+  switch(compareAnswers[compChoice][input]) {
+    case 'win':
+      alert(`You chose ${input}, the computer chose ${compChoice}. Congratulations, you won!`);
+      let scoreUp = document.getElementById("score");
+      scoreUp++;
+      break;
+    case 'lose':
+      alert(`You chose ${input}, the computer chose ${compChoice}. Unfortunately you lose this round, why not try again?`);
+      let livesDown = document.getElementById("lives");
+      livesDown--;
+      break;
+    default:
+      alert(`You chose ${input}, the computer chose ${compChoice}. It's a tie! Try again?`)
+    }
+
+}
+
+function runGame() {
+  
+}
 
 function incrementScore() {
 
